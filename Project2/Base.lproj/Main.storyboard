@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Elv-ih-uI9">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -26,14 +25,23 @@
                                             <constraint firstAttribute="height" constant="100" id="U2R-XD-fkw"/>
                                         </constraints>
                                         <state key="normal" image="france"/>
+                                        <connections>
+                                            <action selector="flagButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fQj-qX-l4l"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUU-yh-cWp">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUU-yh-cWp">
                                         <rect key="frame" x="0.0" y="150" width="200" height="100"/>
                                         <state key="normal" image="france"/>
+                                        <connections>
+                                            <action selector="flagButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ftw-IM-h19"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZQ-Aj-dcY">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZQ-Aj-dcY">
                                         <rect key="frame" x="0.0" y="300" width="200" height="100"/>
                                         <state key="normal" image="france"/>
+                                        <connections>
+                                            <action selector="flagButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qPF-dh-n9X"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <variation key="default">
