@@ -15,75 +15,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="oTX-af-j0E">
-                                <rect key="frame" x="107" y="248" width="200" height="400"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3sd-Wa-bi1">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="2Ks-rY-RLg"/>
-                                            <constraint firstAttribute="height" constant="100" id="U2R-XD-fkw"/>
-                                        </constraints>
-                                        <state key="normal" image="france"/>
-                                        <connections>
-                                            <action selector="flagButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fQj-qX-l4l"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUU-yh-cWp">
-                                        <rect key="frame" x="0.0" y="150" width="200" height="100"/>
-                                        <state key="normal" image="france"/>
-                                        <connections>
-                                            <action selector="flagButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ftw-IM-h19"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZQ-Aj-dcY">
-                                        <rect key="frame" x="0.0" y="300" width="200" height="100"/>
-                                        <state key="normal" image="france"/>
-                                        <connections>
-                                            <action selector="flagButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qPF-dh-n9X"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <variation key="default">
-                                    <mask key="subviews">
-                                        <exclude reference="3sd-Wa-bi1"/>
-                                        <exclude reference="uUU-yh-cWp"/>
-                                        <exclude reference="mZQ-Aj-dcY"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular">
-                                    <mask key="subviews">
-                                        <include reference="3sd-Wa-bi1"/>
-                                        <include reference="uUU-yh-cWp"/>
-                                        <include reference="mZQ-Aj-dcY"/>
-                                    </mask>
-                                </variation>
-                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3sd-Wa-bi1">
+                                <rect key="frame" x="107" y="108" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3sd-Wa-bi1" secondAttribute="height" multiplier="2:1" id="ZbU-5f-XAc"/>
+                                </constraints>
+                                <state key="normal" image="france"/>
+                                <connections>
+                                    <action selector="flagButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fQj-qX-l4l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUU-yh-cWp">
+                                <rect key="frame" x="107" y="223" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uUU-yh-cWp" secondAttribute="height" multiplier="2:1" id="mr5-XK-pcg"/>
+                                </constraints>
+                                <state key="normal" image="france"/>
+                                <connections>
+                                    <action selector="flagButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ftw-IM-h19"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZQ-Aj-dcY">
+                                <rect key="frame" x="107" y="346" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mZQ-Aj-dcY" secondAttribute="height" multiplier="2:1" id="QAF-sZ-rnS"/>
+                                </constraints>
+                                <state key="normal" image="france"/>
+                                <connections>
+                                    <action selector="flagButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qPF-dh-n9X"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="oTX-af-j0E" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dGn-f9-x8J"/>
-                            <constraint firstItem="oTX-af-j0E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nzn-cX-Mo0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="mZQ-Aj-dcY" secondAttribute="bottom" constant="20" id="3Uy-1g-9hh"/>
+                            <constraint firstItem="mZQ-Aj-dcY" firstAttribute="height" secondItem="uUU-yh-cWp" secondAttribute="height" id="3be-VZ-Mpi"/>
+                            <constraint firstItem="mZQ-Aj-dcY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BnI-0n-gWi"/>
+                            <constraint firstItem="uUU-yh-cWp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JaL-Pu-lUy"/>
+                            <constraint firstItem="uUU-yh-cWp" firstAttribute="top" secondItem="3sd-Wa-bi1" secondAttribute="bottom" constant="15" id="OuA-s8-Nbs"/>
+                            <constraint firstItem="mZQ-Aj-dcY" firstAttribute="top" secondItem="uUU-yh-cWp" secondAttribute="bottom" constant="23" id="Rpb-P9-1qi"/>
+                            <constraint firstItem="3sd-Wa-bi1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bsZ-n6-vBn"/>
+                            <constraint firstItem="3sd-Wa-bi1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="uPD-Hv-ISh"/>
+                            <constraint firstItem="uUU-yh-cWp" firstAttribute="height" secondItem="3sd-Wa-bi1" secondAttribute="height" id="xcH-rF-0fx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="oTX-af-j0E"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="dGn-f9-x8J"/>
-                                <exclude reference="nzn-cX-Mo0"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular">
-                            <mask key="subviews">
-                                <include reference="oTX-af-j0E"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="dGn-f9-x8J"/>
-                                <include reference="nzn-cX-Mo0"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="wgB-fA-6W8"/>
                     <connections>
